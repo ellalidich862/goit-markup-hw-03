@@ -69,6 +69,9 @@ img {
   display: flex;
   gap:40px;
   align-items: center;
+  /* padding-left: 76px; */
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu {
