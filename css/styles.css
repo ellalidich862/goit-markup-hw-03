@@ -33,6 +33,11 @@ img {
   margin: 0 auto; 
 }
 
+/* ------------------HEADER------------------------ */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -63,6 +68,7 @@ img {
     line-height: 1.17; /* 21/18 */
     letter-spacing: 0.03em;
     display: flex; 
+    align-items: center;
 }
 
 .menu-list {
@@ -123,7 +129,7 @@ img {
     color: #ffffff;
     background-color: #2e2f42; 
     display: flex;
-    padding: 188px 472px;
+    padding: 188px 0;
     /* width: calc((100% - 2 * 88px)); */
     /* align-self: center;  */
     
@@ -151,8 +157,12 @@ img {
     line-height: 1.5;
     text-align: center;
     margin: auto; 
-    display: flex;
-    justify-content: center;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    /* justify-content: center; */
 }
 
 .button:hover, button:focus {
@@ -163,7 +173,20 @@ img {
 
 /* -----------FEATURES------------- */
 .features {
+  padding: 120px 0;
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  /* clip: rect(0 0 0 0); */
+  overflow: hidden;
 }
 
 .features-list {
@@ -184,6 +207,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:#2E2F42;
+    margin-bottom: 8px;
 }
 
 .item-text {
@@ -195,7 +219,8 @@ img {
 
 /* ------------OUR TEAM-------------------- */
 .section-team {
-    background-color: #f4f4fd;
+    background-color: #f4f4fd; 
+     padding: 120px 0;
 }
 
 .section-header {
@@ -219,8 +244,17 @@ img {
     background-color: #ffffff;
 }
 
+.team-item:first-child {
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-member {
+  padding: 32px 0;
+}
+
 .team-item .item-name {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-item .item-text {
@@ -231,13 +265,26 @@ img {
 .section-portfolio {
     line-height: 24px;
     letter-spacing: 0.02em;
-    padding-bottom: 158px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 } 
+
+.section-header {
+  padding-bottom: 72px;
+}
+
+.portfolio-example {
+   padding: 32px 16px; 
+   border: 1px solid #e7e9fc; 
+   border-top: none; 
+   margin-bottom: 8px;
+}
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 48px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 /* --------------FOOTER---------------- */
@@ -252,6 +299,8 @@ img {
 .section-footer .logo .studio-color {
   color: #f4f4fd ;
   max-width: 264px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -259,5 +308,4 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    padding-top: 16px;
 }
