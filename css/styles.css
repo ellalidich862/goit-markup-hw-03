@@ -13,9 +13,11 @@ body {
 
 ul {
     list-style: none;
-    margin-top:0; 
+    /* margin-top:0; 
     margin-bottom: 0; 
-    padding-left: 0;
+    padding-left: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 a.menu, a.contact-info, .contact-item, .logo {
@@ -28,8 +30,7 @@ img {
 
 .container {
   width: 1158px;
-  padding-left: 15px; 
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto; 
 }
 
@@ -90,6 +91,7 @@ img {
 
 .contact-info {
     font-style: normal;
+    margin-left: auto;
 }
 
 .contact-list {
@@ -124,6 +126,9 @@ img {
 }
 
 /* -----------HERO-SECTION--------- */
+.section {
+  padding: 120px 0;
+}
 
 .hero-section {
     color: #ffffff;
@@ -249,7 +254,13 @@ img {
 }
 
 .team-member {
-  padding: 32px 0;
+  padding: 32px 0; 
+  /* display: inline-flex;
+  padding-bottom: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px; */
 }
 
 .team-item .item-name {
@@ -287,6 +298,10 @@ img {
   row-gap: 48px;
 }
 
+.portfolio-item {
+  border: 1px solid #E7E9FC; 
+  background: #FFF;
+}
 /* --------------FOOTER---------------- */
 .section-footer {
     color:#ffffff;
