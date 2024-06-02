@@ -190,7 +190,7 @@ img {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  /* clip: rect(0 0 0 0); */
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -311,11 +311,14 @@ img {
 }
 
 
+.section-footer > a {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .section-footer .logo .studio-color {
   color: #f4f4fd ;
   max-width: 264px;
-  display: inline-block;
-  margin-bottom: 16px;
 }
 
 .footer-text {
