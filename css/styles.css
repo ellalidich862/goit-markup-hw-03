@@ -313,7 +313,7 @@ img {
 
 .logo {
   display: inline-block; 
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .section-footer .logo .studio-color {
