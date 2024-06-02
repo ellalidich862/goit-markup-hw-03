@@ -311,14 +311,15 @@ img {
 }
 
 
-.section-footer > a {
-  display: inline-block;
-  margin-bottom: 16px;
+.logo {
+  display: inline-block; 
+  padding-bottom: 16px;
 }
 
 .section-footer .logo .studio-color {
   color: #f4f4fd ;
   max-width: 264px;
+  margin-bottom: 16px;
 }
 
 .footer-text {
