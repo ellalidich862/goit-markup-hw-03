@@ -311,7 +311,7 @@ img {
 }
 
 
-.section-footer > a {
+.section-footer .logo .studio-color {
   color: #f4f4fd ;
   max-width: 264px;
   display: inline-block;
